@@ -18,8 +18,9 @@
 |---|---|---|---|---|
 | Android | **SW Maps 3.1.1.0** | Direct field mapping in one app | 2026-08-11 | [Open SW Maps quickstart](android/sw-maps/) |
 | Android | **GNSS Master 1.5.0.0** | Bridging corrected location to compatible Android apps | 2026-08-20 | [Open GNSS Master quickstart](android/gnss-master/) |
+| Windows | **AgOpenGPS 6.8.5 + AgIO v1.0.0** | RTK position input for an AgOpenGPS field workflow | 2026-08-20 | [Open AgOpenGPS quickstart](windows/agopengps/) |
 
-SW Maps keeps receiver control, corrections, and the map in one place. GNSS Master is the better fit when the receiver needs to serve another Android app through Mock Location. Both references use USB Serial and NTRIP, but they solve different field workflows.
+SW Maps keeps receiver control, corrections, and the map in one place. GNSS Master is the better fit when the receiver needs to serve another Android app through Mock Location. On Windows, AgIO is the communication layer between the receiver, the NTRIP service, and AgOpenGPS. These workflows use familiar GNSS building blocks, but solve different field tasks.
 
 ## How to Use This Repository
 
@@ -32,5 +33,6 @@ SW Maps keeps receiver control, corrections, and the map in one place. GNSS Mast
 | Platform | Available references |
 |---|---|
 | [Android](android/) | SW Maps and GNSS Master over USB Serial |
+| [Windows](windows/) | AgOpenGPS RTK position input through AgIO over USB Serial |
 
 For the complete software directory and related field workflows, visit the [Kalmix Integrations Hub](https://www.kalmixtech.com/pages/integrations).
